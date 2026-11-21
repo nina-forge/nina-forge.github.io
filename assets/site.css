@@ -72,3 +72,154 @@ footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid var(--line);colo
 footer p{margin:.4rem 0}
 
 @media (prefers-reduced-motion:reduce){.app-link{transition:none}.app-link:hover{transform:none}}
+
+main.lp{max-width:66rem}
+.lp-desktop-only{display:none}
+.lp-hero{display:grid;gap:1.25rem;justify-items:center;text-align:center;padding:1.5rem 0 .5rem}
+.lp-icon{width:80px;height:80px;border-radius:20px;box-shadow:0 0 0 1px var(--line),0 0 40px rgba(63,224,255,.35)}
+.lp-hero h1{font-size:2.5rem;margin:.6rem 0 .5rem}
+.lp-lead{font-size:1.05rem;max-width:34rem;margin:0 auto 1rem}
+.lp-collage{display:none;position:relative}
+
+.lp-step{font:600 .7rem/1 Inter,system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--foil)}
+.lp-pillar{display:grid;gap:1rem;margin-top:2.25rem}
+.lp-pillar h2{font-size:1.35rem;color:var(--text);margin:.35rem 0 .4rem}
+.lp-pillar p{margin:0;color:var(--muted)}
+.lp-collect{grid-template-columns:96px 1fr;align-items:center}
+.lp-decks{grid-template-columns:1fr 96px;align-items:center}
+.lp-decks .lp-visual{order:2}
+
+.lp-art,.lp-game.lp-art{background:
+  radial-gradient(circle at 30% 35%,#FFCF6B 0 12%,transparent 13%),
+  radial-gradient(circle at 70% 60%,#FF5C7A 0 18%,transparent 19%),
+  radial-gradient(circle at 50% 100%,#2FA9E0 0 35%,transparent 36%),
+  linear-gradient(160deg,#1B3D5C,#4A1F4D 60%,#0F2A1F)}
+
+.lp-scan{position:relative;width:100%;max-width:220px;aspect-ratio:5/7;border-radius:10px;border:2px solid var(--accent);box-shadow:0 0 24px rgba(63,224,255,.35)}
+.lp-scan .lp-art{position:absolute;inset:7%;border-radius:6px;opacity:.85}
+.lp-scan::after{content:"";position:absolute;left:0;right:0;top:4%;height:3px;background:var(--green);box-shadow:0 0 14px var(--green);animation:lp-sweep 2.4s infinite ease-in-out}
+.lp-plus{position:absolute;right:-10px;top:-12px;z-index:1;background:var(--green);color:var(--background);font:600 .8rem/1 Inter,system-ui,sans-serif;padding:.25rem .5rem;border-radius:999px;animation:lp-pop 2.4s infinite}
+@keyframes lp-sweep{50%{top:92%}}
+@keyframes lp-pop{0%,45%{transform:scale(0);opacity:0}55%{transform:scale(1.2);opacity:1}65%,90%{transform:scale(1);opacity:1}100%{opacity:0}}
+
+.lp-game{width:100%;aspect-ratio:1;border-radius:10px;border:1px solid var(--line);overflow:hidden;position:relative;background:var(--raised)}
+.lp-games{list-style:none;padding:0;margin:.4rem 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem}
+.lp-games li{margin:0;text-align:center}
+.lp-games h3{font:400 .78rem/1.3 Inter,system-ui,sans-serif;margin:.3rem 0 0}
+.lp-games p{display:none}
+.lp-streak{display:flex;gap:4px;align-items:center;font-size:.85rem;color:var(--muted);margin-top:.6rem}
+.lp-streak i{width:12px;height:12px;border-radius:3px;background:var(--green)}
+.lp-streak i.lp-off{background:var(--raised);border:1px solid var(--line)}
+.lp-streak i:last-of-type{margin-right:.4rem}
+
+.lp-cartdle{display:grid;grid-template-rows:repeat(3,1fr);gap:3px;padding:12%}
+.lp-cartdle span{display:grid;grid-template-columns:repeat(5,1fr);gap:3px}
+.lp-cartdle i{border-radius:2px;background:#30485C;animation:lp-flip 4s infinite}
+.lp-cartdle .lp-close{--tile:#FFB547}.lp-cartdle .lp-yes{--tile:var(--green)}.lp-cartdle .lp-no{--tile:#4B5D6E}
+.lp-cartdle span:nth-child(2) i{animation-delay:.6s}.lp-cartdle span:nth-child(3) i{animation-delay:1.2s}
+@keyframes lp-flip{0%,10%{background:#30485C;transform:scaleY(1)}15%{transform:scaleY(.1)}20%,90%{background:var(--tile);transform:scaleY(1)}100%{background:#30485C}}
+
+.lp-chronology{display:flex;align-items:flex-end;justify-content:center;gap:4%;padding:12%}
+.lp-chronology i{width:14%;border-radius:2px;background:var(--accent);animation:lp-swap 4s infinite ease-in-out}
+.lp-chronology i:nth-child(1){height:70%;--shift:200%}
+.lp-chronology i:nth-child(2){height:30%;--shift:-115%}
+.lp-chronology i:nth-child(3){height:90%;--shift:115%}
+.lp-chronology i:nth-child(4){height:50%;--shift:-200%}
+.lp-chronology i:nth-child(5){height:40%;--shift:0}
+@keyframes lp-swap{0%,30%{transform:none}50%,85%{transform:translateX(var(--shift))}100%{transform:none}}
+
+.lp-saga::before{content:"";position:absolute;left:10%;right:10%;top:50%;height:2px;background:var(--line)}
+.lp-saga i{position:absolute;top:calc(50% - 4px);width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.lp-saga i:nth-child(1){left:12%}.lp-saga i:nth-child(2){left:34%}.lp-saga i:nth-child(3){left:56%}.lp-saga i:nth-child(4){left:78%}
+.lp-saga b{position:absolute;left:53%;top:calc(50% - 7px);width:14px;height:14px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green);animation:lp-era 4s infinite ease-in-out}
+@keyframes lp-era{0%{left:10%;background:var(--foil);box-shadow:0 0 10px var(--foil)}40%{left:53%;background:var(--foil);box-shadow:0 0 10px var(--foil)}60%,100%{left:53%}}
+
+.lp-aurebesh{display:grid;place-items:center;font:600 1rem/1 "Chakra Petch",monospace;letter-spacing:2px}
+.lp-aurebesh span{position:absolute;opacity:0;animation:lp-cipher 4s infinite}
+.lp-aurebesh span+span{opacity:1;color:var(--green);animation-name:lp-plain}
+@keyframes lp-cipher{0%,40%{opacity:1}55%,100%{opacity:0}}
+@keyframes lp-plain{0%,40%{opacity:0}55%,95%{opacity:1}100%{opacity:0}}
+
+.lp-frame{background-size:100% 100%;background-position:30% 35%;animation:lp-zoom 4s infinite ease-in-out}
+@keyframes lp-zoom{0%,20%{background-size:420% 420%}70%,100%{background-size:100% 100%}}
+.lp-focus{animation:lp-blur 4s infinite ease-in-out}
+@keyframes lp-blur{0%,20%{filter:blur(6px) grayscale(1)}75%,100%{filter:none}}
+@property --lp-stripe{syntax:"<length>";inherits:false;initial-value:12px}
+.lp-fusion::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 60% 30%,#C77DFF 0 15%,transparent 16%),radial-gradient(circle at 25% 75%,var(--green) 0 20%,transparent 21%),linear-gradient(20deg,#2A1840,#103A4A);
+  -webkit-mask:repeating-linear-gradient(90deg,#000 0 var(--lp-stripe),transparent var(--lp-stripe) 12px);
+  mask:repeating-linear-gradient(90deg,#000 0 var(--lp-stripe),transparent var(--lp-stripe) 12px);
+  animation:lp-stripes 4s infinite ease-in-out}
+@keyframes lp-stripes{0%,20%{--lp-stripe:6px}70%,100%{--lp-stripe:12px}}
+
+.lp-deck{display:flex;flex-direction:column;gap:4px;width:100%}
+.lp-deck i{height:10px;border-radius:2px;background:var(--raised);border:1px solid var(--line);position:relative;overflow:hidden}
+.lp-deck i::after{content:"";position:absolute;inset:0;background:var(--green);transform-origin:left;animation:lp-fill 3s infinite;animation-delay:calc(var(--row)*.25s)}
+.lp-deck i.lp-missing::after{background:#FFB547}
+.lp-deck span{display:none}
+@keyframes lp-fill{0%{transform:scaleX(0)}30%,90%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+
+.lp-sets{width:100%;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.25rem}
+.lp-set{display:grid;grid-template-columns:1fr auto;gap:.25rem .6rem;margin-bottom:.9rem;font-size:.9rem}
+.lp-set:last-child{margin-bottom:0}
+.lp-set b{font-weight:600}
+.lp-set span{color:var(--muted);font-variant-numeric:tabular-nums}
+.lp-set i{grid-column:1/-1;height:8px;border-radius:999px;background:var(--raised);position:relative;overflow:hidden}
+.lp-set i::after{content:"";position:absolute;inset:0;width:var(--progress);border-radius:999px;background:var(--holo);transform-origin:left;animation:lp-grow 3.5s infinite ease-out}
+@keyframes lp-grow{0%{transform:scaleX(0)}40%,100%{transform:scaleX(1)}}
+
+.lp-section{font-size:1.2rem;margin:2.5rem 0 .75rem}
+.lp-index{display:grid;grid-template-columns:1fr 1fr;gap:.9rem 1rem}
+.lp-index h3{font-size:.9rem}
+.lp-index ul{margin:.25rem 0 0;padding:0;list-style:none;font-size:.85rem;color:var(--muted)}
+.lp-index li{margin:.15rem 0}
+.lp-index li::before{content:"✓ ";color:var(--green)}
+.lp-index .lp-wide{grid-column:1/-1}
+
+.lp-pair{display:grid;gap:.75rem;margin-top:2rem}
+.lp-pair .panel{margin:0}
+.lp-pair .panel p{color:var(--muted)}
+.lp-chips{list-style:none;padding:0;margin:.5rem 0 .25rem;display:flex;flex-wrap:wrap;gap:.4rem}
+.lp-chips li{margin:0;padding:.15rem .65rem;border:1px solid var(--line);border-radius:999px;background:var(--raised);font-size:.8rem}
+
+@media (min-width:760px){
+  main.lp{padding:1.5rem 2.5rem 3rem}
+  .lp-mobile-only{display:none}
+  .lp-desktop-only{display:block}
+  .lp-hero{grid-template-columns:1.3fr 1fr;justify-items:start;text-align:left;align-items:center;gap:3rem;padding:3.5rem 0 1.5rem}
+  .lp-icon{width:88px;height:88px;border-radius:22px}
+  .lp-hero h1{font-size:4rem}
+  .lp-lead{font-size:1.25rem;margin:0 0 1.25rem}
+  .lp-collage{display:block;justify-self:center;width:220px}
+  .lp-collage .lp-game{position:absolute;width:84px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+  .lp-c1{left:-70px;top:24px;transform:rotate(-8deg)}
+  .lp-c2{right:-64px;top:-10px;transform:rotate(7deg)}
+  .lp-c3{right:-50px;bottom:10px;transform:rotate(-4deg)}
+  .lp-collect,.lp-decks{grid-template-columns:1fr 1fr;gap:3.5rem;margin-top:4.5rem}
+  .lp-collect .lp-visual{width:100%;max-width:420px;justify-self:center}
+  .lp-pillar h2{font-size:2rem;margin:.5rem 0 .6rem}
+  .lp-pillar p{font-size:1.05rem}
+  .lp-play{margin-top:4.5rem;text-align:center;justify-items:center}
+  .lp-play-text{max-width:40rem}
+  .lp-games{grid-template-columns:repeat(7,1fr);gap:.9rem;width:100%;margin-top:1.1rem}
+  .lp-games h3{font:600 .9rem/1.3 "Chakra Petch",Inter,system-ui,sans-serif;margin-top:.4rem}
+  .lp-play .lp-games p{display:block;font-size:.78rem;line-height:1.35;margin-top:.15rem}
+  .lp-streak{justify-content:center;font-size:.9rem}
+  .lp-deck{max-width:360px;gap:7px;justify-self:center}
+  .lp-deck i{height:16px}
+  .lp-deck span{display:block;font-size:.9rem;font-weight:600;color:var(--muted);margin-top:.4rem}
+  .lp-section{font-size:1.75rem;margin:5rem 0 1.25rem;text-align:center}
+  .lp-index{grid-template-columns:repeat(4,1fr);gap:1.4rem 1.75rem;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:1.5rem 1.75rem}
+  .lp-index h3{font-size:1rem;color:var(--accent)}
+  .lp-index ul{font-size:.9rem}
+  .lp-index .lp-wide{grid-column:span 2}
+  .lp-pair{grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.25rem}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .lp *,.lp *::before,.lp *::after{animation:none!important}
+  .lp-scan::after,.lp-plus{display:none}
+  .lp-cartdle i{background:var(--tile)}
+  .lp-aurebesh span{opacity:0}
+  .lp-aurebesh span+span{opacity:1}
+}

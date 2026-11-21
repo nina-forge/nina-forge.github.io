@@ -4,69 +4,84 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Playset</title>
-<meta name="description" content="App de fans, gratuita y sin publicidad, para llevar al día tu colección de cartas de Star Wars: Unlimited escaneándolas con el móvil.">
+<meta name="description" content="App de fans, gratuita y sin publicidad, para coleccionar, jugar y montar mazos de Star Wars: Unlimited: escanea tus cartas con el móvil y juega siete juegos de cartas cada día.">
 <meta name="theme-color" content="#04101C">
 <link rel="icon" href="/assets/favicon.png">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<main>
+<main class="lp">
 <header class="topbar">
 <a class="brand" href="/">Nina Forge</a>
 <nav><a href="privacidad/">Privacidad</a><a href="privacidad/en/">Privacy</a></nav>
 </header>
 
-<section class="hero">
-<img src="/assets/playset-icon.png" alt="Icono de Playset">
+<section class="lp-hero">
+<div>
+<img class="lp-icon" src="/assets/playset-icon.png" alt="Icono de Playset">
 <h1><span class="holo-text">Playset</span></h1>
-<p class="lead">Tu colección de Star Wars: Unlimited, al día. Escanea tus cartas con el móvil y sabe en cada momento qué tienes, qué te falta y qué te sobra.</p>
+<p class="lp-lead">Colecciona, juega y monta mazos de Star Wars: Unlimited. Escanea tus cartas con el móvil y sabe qué tienes, qué te falta y qué te sobra.</p>
 <span class="badge">Pronto en Google Play · Gratis y sin publicidad</span>
+</div>
+<div class="lp-collage" aria-hidden="true">
+<div class="lp-scan"><span class="lp-plus">+1</span><div class="lp-art"></div></div>
+<div class="lp-game lp-focus lp-art lp-c1"></div>
+<div class="lp-game lp-aurebesh lp-c2"><span>⟟⏁⌇</span><span>HAN</span></div>
+<div class="lp-game lp-chronology lp-c3"><i></i><i></i><i></i><i></i><i></i></div>
+</div>
 </section>
 
-<h2>Qué puedes hacer</h2>
-<div class="grid">
-<div class="tile"><h3>Escanear tus cartas</h3><p>Apunta con la cámara y la carta se suma a tu colección. Abre un sobre o una caja entera de golpe, o escanea solo para consultar si te falta.</p></div>
-<div class="tile"><h3>Ver qué te falta</h3><p>Marca tu objetivo de copias y mira, Set a Set, qué cartas te faltan para completarlo.</p></div>
-<div class="tile"><h3>Listas para cambiar</h3><p>Tus repetidas y tus buscadas, listas para compartir y cruzar con las de otro jugador.</p></div>
-<div class="tile"><h3>Mazos</h3><p>Importa un mazo de SWUDB y comprueba qué cartas tienes y cuáles te faltan.</p></div>
-<div class="tile"><h3>Colección compartida</h3><p>Empareja dos móviles con un QR y llevad la misma colección entre los dos.</p></div>
-<div class="tile"><h3>Copia de seguridad</h3><p>Guarda tu colección donde quieras y expórtala en CSV para SWUDB.</p></div>
+<section class="lp-pillar lp-collect">
+<div class="lp-visual" aria-hidden="true">
+<div class="lp-scan lp-mobile-only"><span class="lp-plus">+1</span><div class="lp-art"></div></div>
+<div class="lp-sets lp-desktop-only">
+<div class="lp-set"><b>Spark of Rebellion</b><span>252 / 252</span><i style="--progress:100%"></i></div>
+<div class="lp-set"><b>Shadows of the Galaxy</b><span>231 / 262</span><i style="--progress:88%"></i></div>
+<div class="lp-set"><b>Twilight of the Republic</b><span>174 / 257</span><i style="--progress:68%"></i></div>
+<div class="lp-set"><b>Jump to Lightspeed</b><span>96 / 262</span><i style="--progress:37%"></i></div>
+</div>
+</div>
+<div><span class="lp-step">01 · Colecciona</span><h2>Escanea y sabe qué te falta</h2><p>Apunta con la cámara y la carta se suma. Un sobre o una caja entera de golpe, y Set a Set ves qué te falta para tu objetivo.</p></div>
+</section>
+
+<section class="lp-pillar lp-play">
+<div class="lp-play-text"><span class="lp-step">02 · Juega cada día</span><h2>Siete juegos de cartas</h2><p>Una partida nueva cada día. Mantén la racha, juega los días que te perdiste y comparte tu resultado.</p></div>
+<ul class="lp-games">
+<li><div class="lp-game lp-cartdle" aria-hidden="true"><span><i class="lp-no"></i><i class="lp-close"></i><i class="lp-no"></i><i class="lp-yes"></i><i class="lp-no"></i></span><span><i class="lp-close"></i><i class="lp-yes"></i><i class="lp-no"></i><i class="lp-yes"></i><i class="lp-close"></i></span><span><i class="lp-yes"></i><i class="lp-yes"></i><i class="lp-yes"></i><i class="lp-yes"></i><i class="lp-yes"></i></span></div><h3>Cartdle</h3><p>Cada carta que pruebas te da pistas</p></li>
+<li><div class="lp-game lp-chronology" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><h3>Cronología</h3><p>Ordena 5 cartas en la saga</p></li>
+<li><div class="lp-game lp-saga" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></div><h3>Saga</h3><p>¿De qué era y qué película?</p></li>
+<li><div class="lp-game lp-aurebesh" aria-hidden="true"><span>⟟⏁⌇⟒</span><span>LUKE</span></div><h3>Aurebesh</h3><p>El nombre en otro alfabeto</p></li>
+<li><div class="lp-game lp-frame lp-art" aria-hidden="true"></div><h3>Fotograma</h3><p>Un trozo del arte</p></li>
+<li><div class="lp-game lp-focus lp-art" aria-hidden="true"></div><h3>Enfoque</h3><p>La carta, borrosa</p></li>
+<li><div class="lp-game lp-fusion lp-art" aria-hidden="true"></div><h3>Fusión</h3><p>Dos artes mezclados</p></li>
+</ul>
+<div class="lp-streak" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i class="lp-off"></i><i class="lp-off"></i>Racha de 5 días</div>
+</section>
+
+<section class="lp-pillar lp-decks">
+<div class="lp-visual" aria-hidden="true">
+<div class="lp-deck"><i style="--row:0"></i><i style="--row:1"></i><i class="lp-missing" style="--row:2"></i><i style="--row:3"></i><i style="--row:4"></i><i class="lp-missing" style="--row:5"></i><i style="--row:6"></i><span>Tienes 47 de 50 · te faltan 3</span></div>
+</div>
+<div><span class="lp-step">03 · Monta mazos</span><h2>¿Lo tienes o lo compras?</h2><p>Pega el enlace de un mazo de SWUDB, SWU Stats o melee.gg y mira qué cartas tienes y cuáles te faltan. Llévatelo a Karabast o a Melee.</p></div>
+</section>
+
+<h2 class="lp-section">Todo lo que trae</h2>
+<div class="lp-index">
+<div><h3>Colección</h3><ul><li>Escaneo en lote</li><li>Escanear para consultar</li><li>Objetivo de copias</li><li>Colección compartida por QR</li><li>Copia y CSV para SWUDB</li></ul></div>
+<div><h3>Juegos del día</h3><ul><li>Cartdle · Cronología</li><li>Saga · Aurebesh</li><li>Fotograma · Enfoque</li><li>Fusión</li><li>Días pasados y rachas</li></ul></div>
+<div><h3>Mazos y partida</h3><ul><li>Importar por enlace</li><li>Exportar a Karabast y Melee</li><li>Compartir como texto</li><li>Contador de vidas</li></ul></div>
+<div><h3>Cambios</h3><ul><li>Repetidas y Buscadas</li><li>Cruzar listas con otro jugador</li></ul></div>
+<div class="lp-wide"><h3>Catálogo</h3><ul><li>Era, película o serie y artista</li><li>Palabra clave, Canon o Legends</li><li>Nombre, aspecto, tipo, rareza, coste, arena, rasgos, acabado o formato</li></ul></div>
+<div class="lp-wide"><h3>Secretos</h3><ul><li>Easter eggs para fans</li><li>Logros escondidos con rangos Jedi</li></ul></div>
 </div>
 
-<h2>Explora el catálogo</h2>
-<div class="grid">
-<div class="tile"><h3>Por era</h3><p>De la Antigua República a la Primera Orden: filtra las cartas por la época en que transcurren.</p></div>
-<div class="tile"><h3>Por película o serie</h3><p>Todas las cartas de Andor, de The Mandalorian, del Episodio IV o de La Remesa Mala.</p></div>
-<div class="tile"><h3>Por artista</h3><p>Encuentra todas las ilustraciones de quien más te gusta.</p></div>
-<div class="tile"><h3>Y mucho más</h3><p>Nombre, número, aspecto, tipo, rareza, coste, arena, rasgos, acabado o formato.</p></div>
+<div class="lp-pair">
+<div class="panel"><h3>Para todo el mundo</h3><p>En español e inglés, en móvil y tablet.</p><ul class="lp-chips"><li>Holo u oscuro</li><li>Alto contraste</li><li>Letra más legible</li><li>Visión del color</li><li>Texto más grande</li><li>Menos animaciones</li><li>TalkBack</li></ul></div>
+<div class="panel"><h3>Tu colección es tuya</h3><p>Todo se guarda en tu móvil. Sin cuentas, sin publicidad y sin telemetría propia. Las fotos de las cartas se leen en el móvil: no se guardan ni se envían.</p><p><a href="privacidad/">Lee la política de privacidad completa</a></p></div>
 </div>
-
-<h2>Minijuegos</h2>
-<div class="grid">
-<div class="tile"><h3>Cartdle</h3><p>Adivina la carta del día. Cada carta que pruebes te dice en qué se parece a la secreta. Mantén la racha y comparte tu resultado.</p></div>
-<div class="tile"><h3>Contador de vidas</h3><p>Para la partida: la vida de cada base, la iniciativa y las demás fichas.</p></div>
-</div>
-<p class="meta">Próximamente: Aurebesh, Fotograma, Enfoque y Fusión.</p>
-
-<h2>Easter eggs</h2>
-<div class="panel">
-<p>Playset está lleno de secretos para fans y de logros escondidos. Descúbrelos.</p>
-</div>
-
-<h2>Para todo el mundo</h2>
-<p>Estilo oscuro u holo, colores adaptados a protanopia, deuteranopia y tritanopia, texto más grande y opción de reducir las animaciones. En español e inglés.</p>
-
-<h2>Tu colección es tuya</h2>
-<div class="panel">
-<p>Todo se guarda en tu móvil. Sin cuentas, sin publicidad y sin telemetría propia.</p>
-<p>Las fotos de las cartas se leen en el móvil: no se guardan ni se envían.</p>
-<p><a href="privacidad/">Lee la política de privacidad completa</a></p>
-</div>
-
-<h2>Contacto</h2>
-<p>¿Algo no funciona o tienes una idea? Escribe a <a href="mailto:ninaforgedev@gmail.com">ninaforgedev@gmail.com</a>.</p>
 
 <footer>
+<p>¿Algo no funciona o tienes una idea? Escribe a <a href="mailto:ninaforgedev@gmail.com">ninaforgedev@gmail.com</a>.</p>
 <p>Playset es una app de fans de Nina Forge, no oficial y gratuita. No está afiliada, respaldada ni patrocinada por Fantasy Flight Games, Asmodee, Lucasfilm ni Disney. Star Wars: Unlimited es un juego de Fantasy Flight Games con licencia de Lucasfilm. Star Wars, sus personajes, sus cartas y su arte son marcas y propiedad de sus dueños. © &amp; ™ Lucasfilm Ltd.</p>
 </footer>
 </main>
